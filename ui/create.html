@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          Volunteers
+          <span class="brand-tag">Find a role. Pick a time. Show up.</span>
+        </div>
+        <div class="header-actions">
+          <a class="btn btn-primary" href="event.html">All events</a>
+        </div>
+      </header>
+
+      <div class="create-form">
+        <div class="create-box">
+          <h1 class="detail-title">Create an event</h1>
+
+          <div class="field">
+            <label for="event-title">Event title</label>
+            <input
+              id="event-title"
+              name="title"
+              type="text"
+              value=""
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="field">
+            <label for="event-description">Description</label>
+            <textarea id="event-description" name="description"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="event-date">Date</label>
+            <input
+              id="event-date"
+              name="date"
+              type="text"
+              value=""
+              autocomplete="off"
+            />
+          </div>
+
+          <fieldset class="roles-fieldset">
+            <legend>Roles</legend>
+
+            <div class="role-card">
+              <div class="role-card-head">
+                <h2 class="role-card-title">Role 1</h2>
+              </div>
+
+              <div class="field">
+                <label for="role-1-title">Title</label>
+                <input
+                  id="role-1-title"
+                  name="role-title"
+                  type="text"
+                  value=""
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="field">
+                <label for="role-1-description">Description</label>
+                <textarea id="role-1-description" name="role-description"></textarea>
+              </div>
+
+              <fieldset class="slots-fieldset">
+                <legend>Time slots</legend>
+
+                <div class="field">
+                  <label class="visually-hidden" for="role-1-slot-1">Time slot 1</label>
+                  <input
+                    id="role-1-slot-1"
+                    name="role-slot"
+                    type="text"
+                    value=""
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="field field-with-action">
+                  <label class="visually-hidden" for="role-1-slot-2">Time slot 2</label>
+                  <input
+                    id="role-1-slot-2"
+                    name="role-slot"
+                    type="text"
+                    value=""
+                    autocomplete="off"
+                  />
+                  <button class="btn btn-primary btn-icon" type="button" aria-label="Remove time slot">
+                    −
+                  </button>
+                </div>
+              </fieldset>
+
+              <div class="create-add">
+                <button class="btn btn-primary btn-icon" type="button" aria-label="Add time slot">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="role-card">
+              <div class="role-card-head">
+                <h2 class="role-card-title">Role 2</h2>
+                <button class="btn btn-primary btn-icon" type="button" aria-label="Remove role">
+                  −
+                </button>
+              </div>
+
+              <div class="field">
+                <label for="role-2-title">Title</label>
+                <input
+                  id="role-2-title"
+                  name="role-title"
+                  type="text"
+                  value=""
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="field">
+                <label for="role-2-description">Description</label>
+                <textarea id="role-2-description" name="role-description"></textarea>
+              </div>
+
+              <fieldset class="slots-fieldset">
+                <legend>Time slots</legend>
+
+                <div class="field">
+                  <label class="visually-hidden" for="role-2-slot-1">Time slot 1</label>
+                  <input
+                    id="role-2-slot-1"
+                    name="role-slot"
+                    type="text"
+                    value=""
+                    autocomplete="off"
+                  />
+                </div>
+              </fieldset>
+
+              <div class="create-add">
+                <button class="btn btn-primary btn-icon" type="button" aria-label="Add time slot">
+                  +
+                </button>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="create-add">
+            <button class="btn btn-primary btn-icon" type="button" aria-label="Add role">+</button>
+          </div>
+        </div>
+
+        <div class="create-actions">
+          <button class="btn btn-primary" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button">Create</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
