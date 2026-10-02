@@ -205,6 +205,25 @@ a:focus-visible {
   cursor: default;
 }
 
+.choice-role {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.choice-count {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.choice-role:hover .choice-count {
+  color: inherit;
+}
+
 .choice-meta {
   display: block;
   margin-top: 0.2rem;
